@@ -1,0 +1,84 @@
+/*字符编码*/
+@charset "UTF-8";
+
+/* #控制对应div的css样式 */
+/* *号是css中的通配符，是所有的标签都有的属性，表示所有的标签都遵循的统一样式。 */
+/* .是class选择器 */
+p{
+    font-family: "Adobe 仿宋 Std R";
+}
+
+#bidTitle{
+    font-size: 30px;
+    font-family: 'Microsoft JhengHei';
+    color: rgb(98,94,91);
+    background-color: rgba(0,190,231,0.1);
+    height: 40px;
+}
+#roll{
+    font-size: 18px;
+    font-family: 'Microsoft JhengHei';
+    color: #4682B4;
+}
+#weluser{
+    font-size: 15px;
+}
+#right{
+    background-color: rgba(0,190,231,0.1);
+}
+#left{
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Microsoft JhengHei';
+    text-align: left;
+    color: #ffffff;
+    background-image: url("image/logo.jpg");
+    border-radius: 3px;
+}
+#link{
+    background-color: #65c5ff;
+    width: 200px;
+
+}
+#link ul{
+    padding:0px;
+    width: 193px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+#link ul li{
+    font-family: "Adobe 宋体 Std L";
+    text-align: center;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 3px #aaaaaa;
+}
+#link ul li a{
+    text-decoration: none;
+    text-shadow: #000000 3px 4px 5px;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    padding: 0px;
+    line-height: 45px;
+    width: 193px;
+    background-image: url("image/link.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+
+}
+#link ul li a:hover{
+    color: #aaaaaa;
+}
+#content{
+    width: 980px;
+    height: 100%;
+    padding: 0px;
+    border: 1px solid #aaaaaa;
+    margin-left: 5px;
+    margin-right: 0px;
+    display: inline-block;
+    border-radius: 4px;
+}
