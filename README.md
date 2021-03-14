@@ -1,4 +1,4 @@
-# study-blog
+# mark
 
-Using to learn code
-用于学习各种代码
+From master
+the first folder is “student's score system”
