@@ -1,5 +1,5 @@
-#How to use git upload files
-##如何使用git上传代码
+# How to use git upload files
+## 如何使用git上传代码
 1.选择自己要上传的代码文件保存在一个文件夹里，右键文件夹，选择Git bash here，打开bash界面。
 2.输入git init。
   git init作用：在当前项目的目录中生成本地的Git管理，简单来说就是生成了一个Git专用的.git文件夹。（注意这个文件夹是隐藏的，需要在文件夹选项里面设置 查看->隐藏的项目 打上勾才可查看。）
