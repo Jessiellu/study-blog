@@ -1,18 +1,19 @@
 # studyPython
 
-#### Description
-First time programmer to learn Python, recording usually use Python function.
+#### 介绍
+零基础入门Pyhton语言，记录常用函数的使用。
 
-#### Software Architecture
-Software：Python 3.0 & more higher version
+#### 软件架构
+软件：Python 3.0及以上
 
-#### Installation
 
-1.  Check whether you already have an up to date version of Python installed by entering python in a command line window. 
-2.  The most stable Windows downloads are available from the Python for Windows page. On Windows you have a choice between 32-bit (labeled x86) and and 64-bit (labeled x86-64) versions, and several flavors of installer for each. 
-3.  After download, double click the package.Next step according to the installation guide.it's very easy to install, you just need to use the default settings and click "Next" until the installation is complete.
+#### 安装教程
 
-#### Instructions
+1.  通过在命令行窗口中输入Python来检查您是否已经安装了最新的 Python 版本。
+2.  最稳定的Windows下载可从Python的窗口页面。在 Windows 上，您可以选择 32 位（标记x86）和 64 位（标记x86-64）版本，以及多种版本的安装程序。
+3.  下载后，双击下载包，进入 Python 安装向导，安装非常简单，你只需要使用默认的设置一直点击"下一步"直到安装完成即可。
 
-1.  Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. 
-2.  Friendly & Easy to Learn.
+#### 使用说明
+
+1.  无论你是新手还是有其他语言的经验，Pyhton都很容易上手。
+2.  友好和易于学习
