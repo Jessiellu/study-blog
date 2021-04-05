@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Welcome</title>
+        <link rel="icon" href="image/logo.jpg" sizes="32x32">
+        <link href="stype.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    
+    <body>
+        <header class="site-head">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo.jpg" width="40px" height="40px"/></a>
+                    <h3>Jessie Blog</h3>
+                </div>
+                <div class="menu" id="menu">
+                    <input type="image" class="dropmenu" id="dropmenu" src="image/nav-list.png" onclick="return name(menu)">
+                    <div class="drop" id="droplist">
+                        <ul id="menul" class="menul">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://github.com/Jessiellu">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="function.js" type="text/javascript"></script>
+            <div class="totem"><img src="image/logo(un).jpg" width="400px" height="400px"></div>
+            <!--向下翻页-->
+            <div class="enter">
+                <a href="#show"><img src="image/enter.png" width="100px" height="100px"></a>
+            </div>
+        </header>
+        <div id="show">
+            <div id="replaces">
+                
+            </div>
+            <div class="introduce">
+                <h1>Welcome to my blog</h1>
+                <p class="p1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Hello, I'm a student in school.<br>
+                    My major is Computer Science and Technology.
+                    Here are some of the notes that I learned before, and now I sort them out.</p>
+                <p class="p2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp If you are not totall satisfied, please leave your comments and advice about these notes.<br><a href="contact.html">Leave your valuable advice.</a></p>
+            </div>
+            
+        </div>
+        <!--主内容：时间轴-->
+        <div class="content">
+            <div class="timezone">
+                <ul>
+                    <li>
+                        <div class="timelabel">01</div>
+                        <div class="time">
+                            <h2>2016-06-18</h2>
+                            <p>Create the first project</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelabel">02</div>
+                        <div class="time">
+                            <h2>2021-03-11</h2>
+                            <p>Student's Score System</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelabel">03</div>
+                        <div class="time">
+                            <h2>2021-03-21</h2>
+                            <p>How to using git upload</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelabel">04</div>
+                        <div class="time">
+                            <h2>2021-04-01</h2>
+                            <p>The first personal blog</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--页脚部分-->
+        <footer class="footerarea">
+            <div></div>
+            <div class="footer-version">
+                <p>Copyright @ <a href="index.html">Jessiellu Blog</a> 2021. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

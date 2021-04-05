@@ -1,0 +1,343 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+/*banner部分*/
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: url("image/backgroundpic.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0px auto;
+    background: rgba(183, 210, 250, 50%);
+    /*position:规定元素的定位类型
+    absolute(生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位)
+    fixed(生成绝对定位的元素，相对于浏览器窗口进行定位)
+    relative(生成相对定位的元素，相对于其正常位置进行定位)
+    static(默认值。没有定位)
+    inherit(规定应该从父元素继承 position 属性的值。)*/
+    position: fixed;/*固定导航条*/
+    z-index: 55;
+    /*z-index属性设置元素的堆叠顺序。
+    拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的面前。
+    仅能在定位元素上奏效（例如positon:）*/
+    top: 0px;
+    left: 0px;
+    /*min-width: 740px;*/
+}
+.navbar div{
+    /*display: inline-block;*/
+    /*dispaly属性规定元素生成框的类型为inline-block（行内块元素）
+    display默认属性inline。此元素被显示为内联元素，元素前后没有换行符*/
+    display: block;
+}
+.logo{
+    width: auto;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    float: left;
+    
+}
+.logo h3{
+    width: auto;
+    height: 40px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    /*vertical-align属性设置元素的垂直对齐方式
+    （定义行内元素的基线相对于该元素所在行的基线的垂直方式）*/
+}
+.menu{
+    width: auto;
+    height: 40px;
+    float: right;
+    box-shadow: 1px solid #e5e5e5;
+}
+.drop ul{
+    list-style: none;
+}
+.drop li{
+    margin-left: 30px;
+    margin-right: 30px;
+    float: left;
+    list-style-type: none;
+    line-height: 30px;
+}
+.drop ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #7c7c7c;
+    text-shadow: #ffffff 2px 2px 2px;
+}
+.drop ul li a:hover{
+    color: #0f9dfc;
+}
+.dropmenu{
+    display: none;
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+    filter: drop-shadow(#ffffff 2px 2px 2px);
+}
+.totem{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    opacity: 0.6;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -200px;
+}
+.enter img{
+    text-align: center;
+    font-weight: bold;
+    filter: drop-shadow(#7c7c7c 2px 6px 2px);
+    left: 50%;
+    top: 80%;
+    margin-left: -50px;
+    position: absolute;
+}
+
+@media screen and (max-width:740px){
+    .menu{
+        width: auto;
+        height: auto;
+        float: right;
+        box-shadow: 1px solid #e5e5e5;
+    }
+    .drop{
+        margin-top: 60px;
+        display: block;
+        position: relative;
+    }
+    .dropmenu{
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: right;
+        margin-right: 30px;
+        margin-top: 15px;
+        text-align: center;
+        filter: drop-shadow(#ffffff 2px 2px 2px);
+    }
+
+    .drop ul{
+        display: none;
+        width: 100px;
+        height: 130px;
+        box-shadow: 1px solid #e5e5e5;  
+        background: rgba(183, 210, 250, 50%);
+        list-style: none; 
+    }
+    .drop li{
+        margin-left: 10px;
+        float: left;
+        list-style-type: none;
+        line-height: 30px;
+    }
+    .drop ul li a{
+        font-weight: bold;
+        text-decoration: none;
+        color: #7c7c7c;
+        text-shadow: #ffffff 2px 2px 2px;
+        display: block;
+    }
+    .drop ul li a:hover{
+        color: #0f9dfc;     
+    }
+    
+    .menu:hover .menul {
+        display: block;
+    }
+    
+}
+
+/*show部分*/
+#replaces{
+    width: 100%;
+    height: 50px;
+}
+.introduce{
+    height: 100%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.p1{
+    width: 500px;
+    text-align: left;
+    margin-left: 200px;
+    font-size: 1.5em; 
+}
+.p2{
+    width: 400px;
+    text-align: left;
+    margin-left: 750px;
+    margin-top: 20px;  
+    font-size: 1.5em; 
+}
+
+/*留言板部分*/
+.basic-grey{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background: #f7f7f7;
+    padding: 25px 15px 25px 10px;
+    font-size: 1.3em;
+    color: #515151;
+    text-shadow: 1px 1px 1px #7c7c7c;
+    border: 1px solid #e4e4e4;
+}
+.basic-grey label{
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span{
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea{
+    border: 1px solid #dadada;
+    color: #515151;
+    height: 30px;
+    width: 60%;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    margin-top: 3px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    line-height: 15px;
+    box-shadow: inset 0px 1px 4px #ececec;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+    height: 30%;
+}
+.basic-grey .button{
+    background: #B7D2FA;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #7c7c7c;
+    box-shadow: 1px 1px 5px #b6b6b6;
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+.basic-grey .button:hover{
+    background: #8bbaff;
+}
+
+/*content部分*/
+.content{
+    width: 90%;
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 0 1.875em 3.125em 1.875em;
+}
+
+.timezone ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+.timezone ul li .time p::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 1px;
+    border: 1px dashed #ccc;
+    left: -7.5%;
+}
+.timezone ul > li {
+    position: relative;
+}
+.timezone ul > li .timelabel {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 40px;
+    color: #000;
+    left: 21%;
+    top: 0;
+    margin: 0 0 0 -25px;
+}
+.timezone ul > li:nth-child(odd) .time {
+    background: #6cbfee;
+}
+.timezone ul > li .time {
+    margin: 0 0 15px 25%;
+    background: #3594cb;
+    color: #ffffff;
+    padding: 2em;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+}
+.timezone ul > li .time h2{
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.timezone ul > li .time::after{
+    right: 100%;
+    border: solid transparent;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #3594cb;
+    border-width: 10px;
+    top: 10px;
+}
+
+/*footer部分*/
+.footerarea{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+.footer-version{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-version p{
+    padding: 20px;
+    text-align: center;
+}
+.footer-version p a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-version p a:hover{
+    color: #ffffff;
+}
