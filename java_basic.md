@@ -21,13 +21,46 @@
 * 任何变量需要初始化或赋值之后才能使用。而局部变量的特点是，**系统不会自动对其进行默认初始化，因此必须显示初始化或赋值。**
 
 #### final变量
-* final变量类似于其它语言的常量。常用的final变量声明方式是：
-      ``` java
-      final 数据类型 变量名=初始值;
-      ```
+* final变量类似于其它语言的常量。常用的final变量声明方式是：`final 数据类型 变量名=初始值;`
 * final变量的特点：***声明并初始化后就不能修改***
 ```java
 final int max=100;
 final int min=1;
-max=10;//错误，*fianl变量初始化之后不可再赋值*
+max=10;//错误，*final变量初始化之后不可再赋值*
 ```
+* 如果final变量在声明时没有直接初始化，那么可以在后续代码中对它初始化一次（即赋值1次），但不能多次赋值。
+
+### 八种基本类型
+> 整数类型：byte,short,int,long
+
+> 浮点类型：float,double
+
+> 字符类型：char
+
+> 逻辑类型：boolean
+
+### 进制表示
+> java支持十进制、八进制和十六进制，但是不支持二进制。
+* java支持十进制
+```java
+int a=12;
+System.out.println("java十进制表示:"+a);
+```
+运行结果:
+`java十进制表示:12`
+
+```java
+int b=012;
+System.out.println("java八进制的演示:"+b)
+```
+运行结果：
+`java八进制的演示:10`
+
+```java
+int c=0x13;
+System.out.println("java十六进制的演示:"+b)
+```
+运行结果：
+`java十六进制的演示:19`
+
+#### 进制转换
