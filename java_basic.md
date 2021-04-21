@@ -31,12 +31,9 @@ max=10;//错误，*final变量初始化之后不可再赋值*
 * 如果final变量在声明时没有直接初始化，那么可以在后续代码中对它初始化一次（即赋值1次），但不能多次赋值。
 
 ### 八种基本类型
-> 整数类型：byte,short,int,long
-
-> 浮点类型：float,double
-
-> 字符类型：char
-
+> 整数类型：byte,short,int,long<br/>
+> 浮点类型：float,double <br/>
+> 字符类型：char<br/>
 > 逻辑类型：boolean
 
 ### 进制表示
@@ -64,3 +61,37 @@ System.out.println("java十六进制的演示:"+b)
 `java十六进制的演示:19`
 
 #### 进制转换
+整型转换为字符串
+```java
+int result=13;
+//十进制->八进制
+String octStr=Integer.toOctalString(result);
+System.out.println(octStr);
+//十进制->十六进制
+String hexStr=Integer.toHexString(result);
+System.out.println(hexStr);
+//十进制->二进制
+String binaryStr=Integer.toBinaryString(result);
+System.out.println(binaryStr);
+```
+运行结果：
+```
+15
+d
+1101
+```
+* 字符串转为整型
+```java
+String resultStr='13';
+//转八进制
+reslut=Integer.valueOf(resultStr,8);
+System.out.println("转为八进制："+result);
+//转十六进制
+reslut=Integer.valueOf(resultStr,16);
+System.out.println("转为十六进制："+result);
+```
+运行结果：
+```
+转为八进制：11
+转为十六进制：19
+```
